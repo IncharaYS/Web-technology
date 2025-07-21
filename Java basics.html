@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Java basics rivision</title>
+</head>
+<body>
+    <h1>Java basics</h1>
+    <div>
+        <h3>Literals</h3>
+        <p>A literal is the <b>source code representation</b> of a value of a <mark> primitive type , the
+String type  or the null type </mark> <br>
+<b>Literal:</b><br>
+1.IntegerLiteral<br>
+2.FloatingPointLiteral<br>
+3.BooleanLiteral<br>
+4.CharacterLiteral<br>
+5.StringLiteral<br>
+6.NullLiteral
+</p>
+    </div>
+    <hr>
+<div>
+    <h3>Keywords</h3>
+    <p><mark>50 character sequences</mark>, formed from ASCII letters, are <strong>reserved</strong> for use as
+keywords and <i>cannot be used as identifiers.</i>
+ </p>
+ <p><strong>List of keywords are:</strong><br><pre>
+abstract    continue    for         new         switch
+assert      default     if          package     synchronized
+boolean     do          goto        private     this
+break       double      implements  protected   throw
+byte        else        import      public      throws
+case        enum        instanceof  return      transient
+catch       extends     int         short       try
+char        final       interface   static      void
+class       finally     long        strictfp    volatile
+const       float       native      super       while
+
+ </pre></p>
+<p>The keywords <mark><u>const and goto are reserved</u></mark>, even though they are not currently used.
+This may allow a Java compiler to produce better error messages if these C++ keywords
+incorrectly appear in programs.</p>p>
+While <mark><u>true and false</u> </mark>might appear to be keywords, they are technically boolean literals
+ <p>Similarly, while null might appear to be a keyword, it is technically the null
+literal </p>
+</div>
+<hr>
+<div>
+    <h3>Identifiers</h3>
+    <p>An identifier is an <em>unlimited-length</em> sequence of <mark>Java letters and Java digits, the
+first of which must be a Java letter.</mark></p>
+<p>An identifier cannot have the same spelling (Unicode character sequence) as a
+<u>keyword, boolean literal , or the null literal , or a compile time error occurs</u>.
+<p>Two identifiers are the same only if they are identical, that is, have the same
+Unicode character for each letter or digit. Identifiers that have the same external
+appearance may yet be different.</p>
+</div>
+<hr>
+<div>
+    <h3>Arrays </h3>
+    <p>Array is a <b>linear data structure</b> where all elements are arranged sequentially. It is a collection of elements of <mark>same data type</mark> stored at contiguous memory locations. </p>
+    <mark>group of references(variables) of similar type
+    <p>literal way of initialization(using{})</p></mark>
+    <p>Ex: <code>String kannadaMovies[]={mungaruMale,"Mr and Ms Ramachari","Bachan","KGF","Hebulli","Kotigobba","Just maath maathalli","Paramathma","Vishnuvardhana","Googly"};</code></p>
+</div>
+<hr>
+<div>
+    <h3>Method</h3>
+    <p>
+        Block of code <b><mark>performing operations on data/variables</mark></b> which <u>may or may not return values</u>.
+    </p>
+    <p><em>Syntax: </em>[access-specifier] returnType methodName(parameter){ }<br>
+method header-[<access-specifier> returnType methodName(parameter)]<br>
+method signature-[methodName(parameter)]<br>
+method body- {	}<br>
+method structure-[[access-specifier] returnType methodName(parameter){ }]</p>
+<p>Ex: <code>public static void add(int num1,int num2){<bR>
+		int sum=num1+num2;<br>
+		System.out.println("Sum of "+num1+" and "+num2+" is: "+sum);
+	}</code></p>
+
+</div>
+<hr>
+<div>
+    <h3>Method overloading</h3>
+    <p>Method Overloading allows us to define <i>multiple methods with the same name</i> but <mark>different parameters</mark> within a class. This difference may include:<br>
+
+The number of parameters<br>
+The types of parameters<br>
+The order of parameters
+<p>Method overloading is used to define <b>multiple options for the same functionality</b> and they have different parameter list.</p>
+</p>
+<p>Ex: <code>class Facebook{<br>
+	public static boolean registerUser(String email,String password){<br>
+		boolean isUserRegistered=false;<br>
+		if(email!=null&&password!=null){<br>
+			isUserRegistered=true;<br>
+		}<br>
+		else System.out.println("Entered email or password is not valid");<br>
+		return isUserRegistered;<br>
+	}<br>
+	
+	public static boolean registerUser(long phoneNo,String password){<br>
+		boolean isUserRegistered=false;<br>
+		if(phoneNo!=0&&password!=null){<br>
+			isUserRegistered=true;<br>
+		}<br>
+		else System.out.println("Entered phoneno or password is not valid");<br>
+		return isUserRegistered;
+	}
+}</code></p>
+</div>
+<hr>
+</body>
+</html>
