@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Passport seva kendra</title>
+</head>
+<body>
+    <center><h1>Passport Seva Kendra</h1></center><br>
+    <h3>User Registration</h3>
+    <form action="submit">
+    <div>
+        <label for="register to apply">Register to apply at:</label>
+        <input type="radio" name="register" id="register to apply" value="CPV Delhi">CPV Delhi
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<span><small>
+        Select the 'CPV Delhi' option to apply for Diplomatic/Official</small></span><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+        <input type="radio" name="register" id="register to apply" value="Passport Office" required>Passport Office
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+        <span><small>passport at Consular, Passport and Visa (CPV) division, Delhi.</small></span>
+    </div><br>
+    <div>
+        <label for="office">Passport Office:</label>
+        <select id="office" name="office" placeholder="----Select---">
+            <option value="---Select---">---Select---</option>
+            <option value="Goa">Goa</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Bhopal">Bhopal</option>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            <span><small>Tibetan Refugees applying for Identity Certificate must register with 'Delhi' Passport Office.</small></span>
+        </select>
+    </div><br>
+    <div>
+        <label for="name">Given name:</label>
+        <input  id="name" type="text" name="name">
+    </div><br>
+    <div>
+        <label for="surname">Sur name:</label>
+        <input  id="surname" type="text" name="surname">
+    </div><br>
+    <div>
+        <label for="dob">Date of Birth (DD/MM/YYYY):</label>
+        <input type="date" id="dob" value="DD/MM/YYYY" name="dob">
+    </div><br>
+    <div>
+        <label for="email">E-mail Id<small>(Max 35 Characters)</small>:</label>
+        <input type="email" id="email" name="email">
+    </div><br>
+    <div>
+        <label for="login?">Do you want your Login Id</label>
+        <input type="radio" name="login?" id="login?">Yes<input type="radio" name="login?" id="login?">No<br>
+        <label for="login?">to be same as E-mail Id?</label>
+    </div><br>
+    <div>
+        <label for="loginid">Login Id:</label>
+        <input name="loginid" id="loginid" type="text">
+    </div><br>
+    <div>
+        <label for="password">Password:</label>
+        <input name="password" id="password" type="password">
+    </div><br>
+    <div>
+        <label for="cpassword">Confirm Password:</label>
+        <input name="cpassword" id="cpassword" type="password">
+    </div><br>
+    <div>
+        <label for="hintq">Hint Question:</label>
+        <select id="hintq" name="hintq" placeholder="----Select---">
+            <option value="---Select---">---Select---</option>
+            <option value="Birth City">Birth City</option>
+            <option value="Favorite city">Favorite city</option>
+            <option value="Favorite food">Favorite food</option>
+            <option value="Favorite cricketer">Favorite cricketer</option>
+            <option value="First school">First school</option>
+        </select>
+    </div><br>
+    <div>
+        <label for="hinta">Hint Answer:</label>
+        <input name="hinta" id="hinta" type="text">
+    </div><br>
+    <div>
+        <label for="captha">Enter Characters Displayed:</label><br>
+        <img src="https://tse3.mm.bing.net/th/id/OIF.blNbYUwnsTL8xxDHjlmJjw?pid=Api&P=0&h=220" alt="captcha" width="200" height="50"><br>
+        <input name="captha" id="captha" type="text">
+    </div><br>
+    <div>
+        <input type="checkbox">I agree for all terms and conditions.
+    </div>
+    <div>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </div>
+</form>
+</body>
+</html>
