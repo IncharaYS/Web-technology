@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="facebooklogo.png">
+    <title>Log in to Facebook</title>
+    <style>
+        body{
+             background-color: #f3f2f2;
+        }
+        #facebook{
+            font-family: "Klavika", "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            color: rgba(4, 0, 255, 0.774);
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+        #loginbox{
+            height: 300px;
+            width: 380px;
+            background-color:white;
+            border-radius: 8px;
+            box-shadow:0px 0px 10px rgba(0, 0, 0, 0.327);
+        }
+        #loginmsg{
+            font-size: larger;
+        }
+       .textbox{
+            font-family: "Klavika", "Helvetica Neue", Arial, sans-serif; 
+            width: 330px;
+            height: 43px;
+            font-size: medium;
+            border-radius: 8px;
+            padding-left: 10px;
+            margin-bottom:15px;
+            border-color:rgba(128, 128, 128, 0.132);
+            box-shadow: none;
+        }
+        #login{
+            font-family: "Klavika", "Helvetica Neue", Arial, sans-serif; 
+            color: white;
+            background-color: rgba(4, 0, 255, 0.774);
+            font-size: large;
+        }
+        a{
+            font-size: medium;
+            color:rgba(4, 0, 255, 0.774);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body><div id="main">
+    <p id="facebook">facebook</p>
+    <form id="loginbox">
+        <p id="loginmsg">Log in to Facebook</p>
+        <label for="email"></label>
+        <input type="text" name="email" class="textbox" placeholder="Email address or phone number"></input>
+        <label id="password"></label>
+        <input type="text" class="textbox" placeholder="Password">
+        <label for="login"></label>
+        <input type="button" class="textbox" placeholder="" value="Log in" id="login"></input>
+        <a href="">Forgotten account?</a>&nbsp;&nbsp;<a href="">Sign up for Facebook</a>
+    </form>
+
+</div>
+    
+    
+</body>
+</html>
